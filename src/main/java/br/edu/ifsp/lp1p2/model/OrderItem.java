@@ -1,5 +1,7 @@
 package br.edu.ifsp.lp1p2.model;
 
+import br.edu.ifsp.lp1p2.enums.Color;
+import br.edu.ifsp.lp1p2.enums.Size;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -15,10 +17,12 @@ public class OrderItem {
     private Long id;
 
     @Column(name = "size")
-    private String size;
+    @Enumerated(EnumType.STRING)
+    private Size size;
 
     @Column(name = "color")
-    private String color;
+    @Enumerated(EnumType.STRING)
+    private Color color;
 
     @Column(name = "itemValue")
     private BigDecimal valorItem;

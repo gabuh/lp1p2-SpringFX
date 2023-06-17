@@ -1,5 +1,7 @@
 package br.edu.ifsp.lp1p2.model;
 
+import br.edu.ifsp.lp1p2.enums.PaymentType;
+import br.edu.ifsp.lp1p2.enums.Status;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -22,9 +24,11 @@ public class Order {
     @Column(name = "payDay", nullable = false)
     private Date payDay;
     @Column(name = "paymentType", nullable = false)
-    private String paymentType;
+    @Enumerated(EnumType.STRING)
+    private PaymentType paymentType;
     @Column(name = "status", nullable = false)
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
     @OneToOne(mappedBy = "order")
     private Budget budget;
