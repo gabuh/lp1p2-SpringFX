@@ -48,7 +48,7 @@ public class JavaFxApplication extends Application {
     }
 
     public void switchContextScene(String name){
-        this.context.publishEvent(new StageReadyEvent(stage, name));
+        context.publishEvent(new StageReadyEvent(stage, name));
     }
 }
 
