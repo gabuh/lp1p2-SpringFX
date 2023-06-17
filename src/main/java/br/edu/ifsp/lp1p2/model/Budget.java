@@ -13,7 +13,7 @@ import java.util.List;
 public class Budget extends Order{
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private long id;
+    private Long id;
     @Column(name = "creationDate", nullable = false)
     private Date creationDate;
     @Column(name = "total", nullable = false)

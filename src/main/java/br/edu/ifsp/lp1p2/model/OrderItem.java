@@ -12,7 +12,7 @@ import java.util.List;
 public class OrderItem {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private long id;
+    private Long id;
 
     @Column(name = "size")
     private String size;

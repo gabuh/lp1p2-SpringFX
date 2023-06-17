@@ -11,7 +11,7 @@ import java.util.List;
 public class Garment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private long id;
+    private Long id;
     @Column(name = "name")
     private String name;
     @Column(name = "basePrice")

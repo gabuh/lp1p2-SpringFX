@@ -11,7 +11,7 @@ import java.util.List;
 public class Model {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private long id;
+    private Long id;
     @Column(name = "name", nullable = false)
     private String name;
     @Column(name = "multiplier", nullable = false)

@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Measure {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private long id;
+    private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
